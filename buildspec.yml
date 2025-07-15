@@ -1,20 +1,20 @@
-# version: 0.2
+version: 0.2
 
-# phases:
-#   install:
-#     commands:
-#       - echo "Installing NGINX"
-#       - yum update -y
-#       - yum install nginx -y
-#   build:
-#     commands:
-#       - mkdir -p /var/www/html/
-#       - cp index.html /var/www/html/
-#   post_build:
-#     commands:
-#       - echo "Configuring NGINX"
-# artifacts:
-#   files:
-#     - /var/www/html/index.html
+phases:
+  install:
+    commands:
+      - echo "Installing NGINX"
+      - yum update -y
+      - yum install nginx -y
+  build:
+    commands:
+      - mkdir -p /var/www/html/
+      - cp index.html /var/www/html/
+  post_build:
+    commands:
+      - echo "Configuring NGINX"
+artifacts:
+  files:
+    - /var/www/html/index.html
 
 
