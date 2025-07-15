@@ -1,0 +1,20 @@
+version: 0.2
+
+phase:
+  install:
+    commands:
+      - echo installing NGINX
+      - sudo apt-get update
+      - sudo apt-get install nginx -y
+   build:
+     commands:
+       - echo Build date on 'date'
+       - cp index.hmtl /var/www/html/
+
+  post_build:
+    commands:
+      - echo Configuring NGINX
+  artifacts:
+    files:
+     - /var/www/html/index.html
+    
