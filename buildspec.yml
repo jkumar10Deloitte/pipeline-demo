@@ -6,7 +6,6 @@ phases:
       - echo "Installing NGINX"
       - yum update -y
       - yum install nginx -y
-  phases:
   build:
     commands:
       - mkdir -p /var/www/html/
