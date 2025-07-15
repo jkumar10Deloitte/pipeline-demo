@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #f5f5f5 0%, #e0ffe0 100%);
+      background: linear-gradient(135deg, #e0e7ff 0%, #f0f5ff 100%);
       color: #222;
       text-align: center;
       margin: 0;
@@ -19,15 +19,18 @@
     .container {
       display: inline-block;
       background: #fff;
-      border: 1px solid #2ecc40;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(44,204,64,0.08);
-      padding: 48px 60px 32px 60px;
+      border: 1px solid #6366f1;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(99,102,241,0.10);
+      padding: 54px 70px 38px 70px;
       margin-top: 40px;
     }
+    .icon {
+      margin-bottom: 18px;
+    }
     .headline {
-      font-size: 2em;
-      color: #2ecc40;
+      font-size: 2.1em;
+      color: #6366f1;
       font-weight: bold;
       margin-bottom: 18px;
       letter-spacing: 1px;
@@ -39,12 +42,12 @@
     }
     .env {
       font-size: 1em;
-      color: #0074D9;
-      background: #e6f7ff;
+      color: #7c3aed;
+      background: #ede9fe;
       border-radius: 6px;
       display: inline-block;
       padding: 8px 20px;
-      border: 1px solid #7FDBFF;
+      border: 1px solid #c4b5fd;
       margin-top: 10px;
     }
     .brand {
@@ -54,12 +57,20 @@
       letter-spacing: 0.5px;
     }
     strong {
-      color: #2ecc40;
+      color: #6366f1;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="icon">
+      <!-- Cloud deployment SVG icon -->
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="28" cy="28" r="28" fill="#6366f1" fill-opacity="0.08"/>
+        <path d="M39 36.5H17C13.9624 36.5 11.5 34.0376 11.5 31C11.5 27.9624 13.9624 25.5 17 25.5H18.5V24C18.5 19.8579 21.8579 16.5 26 16.5C29.2746 16.5 32.0594 18.7826 32.8491 21.8571C32.8993 22.0501 33.0737 22.1875 33.2741 22.1875H34C37.3137 22.1875 40 24.8738 40 28.1875C40 31.5012 37.3137 34.1875 34 34.1875H33.5" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28 31V41M28 41L24 37M28 41L32 37" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
     <div class="headline">CI/CD Pipeline Status</div>
     <div class="message">
       Congratulations! Your application is deployed using an automated<br>
