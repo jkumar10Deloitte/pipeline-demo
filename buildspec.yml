@@ -10,13 +10,11 @@ phases:
     commands:
       - mkdir -p /var/www/html/
       - cp index.html /var/www/html/
-      -cp appspec.yml .
-      
   post_build:
     commands:
       - echo "Configuring NGINX"
 artifacts:
   files:
-    - /var/www/html/index.html
+    - '**/*'
 
 
